@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,13 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-29-6Od">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-29-6Od">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
-                                    <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-oK-s3t">
+                                    <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-oK-s3t">
                                         <rect key="frame" x="8" y="176" width="183" height="138"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.41115880348951123" green="0.49474831640198358" blue="0.80987197160720825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="183" id="1cx-0Z-Ugp"/>
+                                            <constraint firstAttribute="height" constant="138" id="mPC-oQ-U7W"/>
+                                        </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
                                             <attributedString key="attributedTitle">
@@ -41,9 +44,8 @@
                                             <segue destination="Rkz-Hr-Srg" kind="show" id="uo4-OE-Ovr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2g-bP-HHL">
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2g-bP-HHL">
                                         <rect key="frame" x="199" y="176" width="183" height="138"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.4111588035" green="0.4947483164" blue="0.80987197160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
@@ -63,31 +65,8 @@
                                             <segue destination="bXa-Rh-YZ0" kind="show" id="qjn-eE-lgw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ind-cp-Mn0">
-                                        <rect key="frame" x="8" y="322" width="183" height="138"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.4111588035" green="0.4947483164" blue="0.80987197160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Число">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <font key="NSFont" size="36" name="PTMono-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="goToDigitView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP6-cR-Y0a"/>
-                                            <segue destination="IEe-8k-d4U" kind="show" id="Nke-XE-IfT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4l-Xf-PuC">
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4l-Xf-PuC">
                                         <rect key="frame" x="199" y="322" width="183" height="138"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.4111588035" green="0.4947483164" blue="0.80987197160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
@@ -107,10 +86,12 @@
                                             <segue destination="WjU-h2-euG" kind="show" id="29a-2C-XH9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1El-YM-yGJ">
-                                        <rect key="frame" x="8" y="468" width="374" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1El-YM-yGJ">
+                                        <rect key="frame" x="8" y="468" width="374" height="54"/>
                                         <color key="backgroundColor" red="0.4111588035" green="0.4947483164" blue="0.80987197160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="65u-1w-cek"/>
+                                        </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
                                             <attributedString key="attributedTitle">
@@ -130,16 +111,58 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randomizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvN-al-geP">
-                                        <rect key="frame" x="81" y="88" width="229" height="43"/>
+                                        <rect key="frame" x="80" y="88" width="230" height="43"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="37"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ind-cp-Mn0">
+                                        <rect key="frame" x="8" y="322" width="183" height="138"/>
+                                        <color key="backgroundColor" red="0.4111588035" green="0.4947483164" blue="0.80987197160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Число">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="36" name="PTMono-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToDigitView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP6-cR-Y0a"/>
+                                            <segue destination="IEe-8k-d4U" kind="show" id="Nke-XE-IfT"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="YvN-al-geP" secondAttribute="trailing" constant="80" id="B3u-j8-Td5"/>
-                                    <constraint firstItem="YvN-al-geP" firstAttribute="leading" secondItem="ouL-29-6Od" secondAttribute="leading" constant="81" id="eBL-lX-xMN"/>
+                                    <constraint firstItem="YvN-al-geP" firstAttribute="centerX" secondItem="ouL-29-6Od" secondAttribute="centerX" id="0eH-tq-yLU"/>
+                                    <constraint firstAttribute="trailing" secondItem="c2g-bP-HHL" secondAttribute="trailing" constant="8" id="3jF-sw-ozj"/>
+                                    <constraint firstAttribute="trailing" secondItem="S4l-Xf-PuC" secondAttribute="trailing" constant="8" id="5GT-w7-i3t"/>
+                                    <constraint firstItem="Gwg-oK-s3t" firstAttribute="leading" secondItem="ouL-29-6Od" secondAttribute="leading" constant="8" id="Aqp-bg-IKI"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="YvN-al-geP" secondAttribute="trailing" constant="80" id="B3u-j8-Td5"/>
+                                    <constraint firstItem="c2g-bP-HHL" firstAttribute="top" secondItem="YvN-al-geP" secondAttribute="bottom" constant="45" id="Bl3-BF-iB5"/>
+                                    <constraint firstItem="Gwg-oK-s3t" firstAttribute="top" secondItem="YvN-al-geP" secondAttribute="bottom" constant="45" id="EJk-2S-7zb"/>
+                                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="1El-YM-yGJ" secondAttribute="bottom" priority="999" constant="296" id="EmE-ha-cqg"/>
+                                    <constraint firstAttribute="bottom" secondItem="1El-YM-yGJ" secondAttribute="bottom" constant="322" id="K4e-wm-23b"/>
+                                    <constraint firstItem="Gwg-oK-s3t" firstAttribute="baseline" secondItem="c2g-bP-HHL" secondAttribute="firstBaseline" id="Lad-tM-KcV"/>
+                                    <constraint firstItem="S4l-Xf-PuC" firstAttribute="leading" secondItem="Ind-cp-Mn0" secondAttribute="trailing" constant="8" symbolic="YES" id="R1c-pd-eCX"/>
+                                    <constraint firstItem="1El-YM-yGJ" firstAttribute="top" secondItem="S4l-Xf-PuC" secondAttribute="bottom" constant="8" symbolic="YES" id="UB8-Qo-Qs9"/>
+                                    <constraint firstItem="S4l-Xf-PuC" firstAttribute="top" secondItem="c2g-bP-HHL" secondAttribute="bottom" constant="8" symbolic="YES" id="WiD-Ee-yqE"/>
+                                    <constraint firstAttribute="trailing" secondItem="1El-YM-yGJ" secondAttribute="trailing" constant="8" id="Yet-pH-fU3"/>
+                                    <constraint firstItem="W6P-Oe-I2D" firstAttribute="bottom" secondItem="1El-YM-yGJ" secondAttribute="bottom" constant="322" id="cTg-Db-wcF"/>
+                                    <constraint firstItem="YvN-al-geP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ouL-29-6Od" secondAttribute="leading" constant="81" id="eBL-lX-xMN"/>
                                     <constraint firstItem="YvN-al-geP" firstAttribute="top" secondItem="ouL-29-6Od" secondAttribute="top" constant="88" id="kni-eW-Ivg"/>
+                                    <constraint firstItem="Ind-cp-Mn0" firstAttribute="leading" secondItem="ouL-29-6Od" secondAttribute="leading" constant="8" id="n0v-be-n73"/>
+                                    <constraint firstItem="c2g-bP-HHL" firstAttribute="leading" secondItem="S4l-Xf-PuC" secondAttribute="leading" id="qPk-LQ-kXo"/>
+                                    <constraint firstItem="S4l-Xf-PuC" firstAttribute="baseline" secondItem="Ind-cp-Mn0" secondAttribute="firstBaseline" id="rgN-Wt-GJ1"/>
+                                    <constraint firstItem="c2g-bP-HHL" firstAttribute="leading" secondItem="Gwg-oK-s3t" secondAttribute="trailing" constant="8" symbolic="YES" id="rvd-xT-7p5"/>
+                                    <constraint firstItem="YvN-al-geP" firstAttribute="centerX" secondItem="1El-YM-yGJ" secondAttribute="centerX" id="s88-Xl-s5j"/>
+                                    <constraint firstItem="Ind-cp-Mn0" firstAttribute="top" secondItem="Gwg-oK-s3t" secondAttribute="bottom" constant="8" symbolic="YES" id="snA-fD-tcu"/>
+                                    <constraint firstItem="1El-YM-yGJ" firstAttribute="leading" secondItem="ouL-29-6Od" secondAttribute="leading" constant="8" id="xYo-Vf-8z2"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="djS-Gc-DhJ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="W6P-Oe-I2D"/>
@@ -148,6 +171,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.62282119490897003" green="0.86078917980194092" blue="0.85601362789567792" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ouL-29-6Od" secondAttribute="bottom" id="4li-xF-b1W"/>
+                            <constraint firstAttribute="trailing" secondItem="ouL-29-6Od" secondAttribute="trailing" id="OO0-0o-zR7"/>
+                            <constraint firstItem="ouL-29-6Od" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="efL-mh-vkh"/>
+                            <constraint firstItem="ouL-29-6Od" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mKn-jl-IVb"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="coinButton" destination="c2g-bP-HHL" id="UDp-ss-UJ4"/>
