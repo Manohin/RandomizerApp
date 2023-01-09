@@ -26,14 +26,10 @@ class ViewControllerDigit: UIViewController {
         let result = Int.random(in: fromTFdigit...toTFdigit)
         
         digitResult.text = String(result)
-        
         digitResult.isHidden = false
     }
-
     
     @IBAction func exitButton(_ sender: UIButton) {
-        
-        
         dismiss(animated: true, completion: nil)
     }
     
