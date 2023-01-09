@@ -20,10 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var yesNoButton: UIButton!
     
     override func viewDidLoad() {
-        
-        
-        
-        
+       
         diceButton.layer.cornerRadius = 20
         coinButton.layer.cornerRadius = 20
         digitButton.layer.cornerRadius = 20
@@ -41,8 +38,6 @@ class ViewController: UIViewController {
     }
     @IBAction func goToDiceView(_ sender: UIButton) {
     }
-    
     @IBAction func goToYesOrNoView(_ sender: UIButton) {
     }
 }
-
