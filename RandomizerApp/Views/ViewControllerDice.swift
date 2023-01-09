@@ -12,10 +12,7 @@ class ViewControllerDice: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
     }
-    
 
     @IBAction func rollButton(_ sender: UIButton) {
     
@@ -42,15 +39,10 @@ class ViewControllerDice: UIViewController {
      //   AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) { }
         UISelectionFeedbackGenerator().selectionChanged()
             randomDice()
-       
-        }
-        
-        
+        }     
     @IBAction func backButton(_ sender: UIButton) {
-        
         dismiss(animated: true, completion: nil)
     }
-    
     }
     /*
     // MARK: - Navigation
